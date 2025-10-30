@@ -8,6 +8,8 @@ Gaming & NFTs Track
 - **[Chimgozirim Amadi (Hyperion)]-(https://drive.google.com/file/d/178dk7c36EbWRUgWVBbSAL04zjBKAu8ki/view?usp=drive_link)**  
 - **[Joy Chukwuma]-(https://drive.google.com/file/d/1vRPyJuJvQqTo2hLr8hOgNFErv6Qa20FZ/view?usp=drive_link)**
 
+## Pitch Deck
+- **(https://www.canva.com/design/DAG2_2_94QU/axn3JcGJtQXRCTcJRy521w/view?utm_content=DAG2_2_94QU&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h0584680fba#7)**
 
 ## Project Overview
 GunDrive is an action-packed multiplayer game built on Unity that integrates Hedera's blockchain technology for in-game asset management and tokenomics. Players can earn GUND tokens through gameplay and collect unique NFT weapons represented as smart contracts on the Hedera network. For more details about the game mechanics and features, see the [Game Documentation](https://github.com/ChimgoHyperion/Gundrive-Hedera/blob/main/Game/README.md)

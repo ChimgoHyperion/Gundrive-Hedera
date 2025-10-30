@@ -1,0 +1,5 @@
+{
+  "TokenPurchaseWithMockModule#ERC20Mock": "0x65C725bb789C6a193ab76010A65834517C836C8C",
+  "TokenPurchaseWithMockModule#TokenPurchase": "0x054c78330B24b3d39B42775021FC81E73404eebe",
+  "GDNFTTokenModule#GDNFT": "0xF129Ea6924B8dcB28dBFB93191c7CD32380EC56C"
+}

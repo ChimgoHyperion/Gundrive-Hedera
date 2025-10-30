@@ -28,7 +28,7 @@ public class MovementandShooting : MonoBehaviour
 
     public float boostAmount;
     [SerializeField] float maxBoostValue;
-    public float boostFactor;
+    public float boostFactorIncrement,boostFactorDecreament;
     public Slider boostBar;
     public float gravityScale;
     public float fallGravity;
@@ -142,7 +142,7 @@ public class MovementandShooting : MonoBehaviour
         if (isGrounded)
         {
             if (boostAmount < maxBoostValue)
-                boostAmount += Time.deltaTime * boostFactor;
+                boostAmount += Time.deltaTime * boostFactorIncrement;
             trail.emitting = false; // use RPC for multiplayer
         }
         if (boostAmount == 0)
@@ -153,7 +153,7 @@ public class MovementandShooting : MonoBehaviour
         {
             //  direction.y -= boostFactor * Time.deltaTime;
             if (boostAmount >= 0)
-                boostAmount -= Time.deltaTime * boostFactor;
+                boostAmount -= Time.deltaTime * boostFactorDecreament;
             trail.emitting = true;
         }
 
@@ -302,18 +302,8 @@ public class MovementandShooting : MonoBehaviour
     }
     public void IncreaseHealth()
     {
-        if (health<=80)
-        {
-            health += 20;
-        }
-        if (health>80 && health<=90)
-        {
-            health += 10;
-        }
-        if (health > 90)
-        {
-            health = 100;
-        }
+
+        health = 100;
        
     }
     public void IncreaseBoost()

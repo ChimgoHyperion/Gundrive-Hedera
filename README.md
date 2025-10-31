@@ -52,7 +52,7 @@ The combination of Hedera's low transaction fees and high throughput enables:
           
     [Mirror Nodes]
 ```
-![alt text](<GunDrive Architecture.drawio.png>)
+![alt text](<GunDrive Architecture.drawio (2).png>)
 
 ## Deployed Hedera IDs (Testnet)
 - GUND Token Contract: 0xF09aC86286Ee1270ABdf8a8Ec7fC32de1Ab01cE3 [0.0.6904416-xnxaj]

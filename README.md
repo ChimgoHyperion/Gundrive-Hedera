@@ -1,4 +1,4 @@
-# GunDrive - Play-to-Earn Gaming on Hedera
+# Gundrive - Play-to-Earn Gaming on Hedera
 
 ## Project Track
 Gaming & NFTs Track
@@ -12,7 +12,7 @@ Gaming & NFTs Track
 - **(https://www.canva.com/design/DAG2_2_94QU/axn3JcGJtQXRCTcJRy521w/view?utm_content=DAG2_2_94QU&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h0584680fba#7)**
 
 ## Project Overview
-GunDrive is an action-packed multiplayer game built on Unity that integrates Hedera's blockchain technology for in-game asset management and tokenomics. Players can earn GUND tokens through gameplay and collect unique NFT weapons represented as smart contracts on the Hedera network. For more details about the game mechanics and features, see the [Game Documentation](https://github.com/ChimgoHyperion/Gundrive-Hedera/blob/main/Game/README.md)
+Gundrive is an action-packed multiplayer game built on Unity that integrates Hedera's blockchain technology for in-game asset management and tokenomics. Players can earn GUND tokens through gameplay and collect unique NFT weapons represented as smart contracts on the Hedera network. For more details about the game mechanics and features, see the [Game Documentation](https://github.com/ChimgoHyperion/Gundrive-Hedera/blob/main/Game/README.md)
 
 ## Hedera Integration Summary
 
@@ -52,7 +52,7 @@ The combination of Hedera's low transaction fees and high throughput enables:
           
     [Mirror Nodes]
 ```
-![alt text](<GunDrive Architecture.drawio.png>)
+![alt text](<GunDrive Architecture.drawio (2).png>)
 
 ## Deployed Hedera IDs (Testnet)
 - GUND Token Contract: 0xF09aC86286Ee1270ABdf8a8Ec7fC32de1Ab01cE3 [0.0.6904416-xnxaj]
@@ -71,8 +71,8 @@ The combination of Hedera's low transaction fees and high throughput enables:
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/NorVirae/Gun-Drive.git
-cd Gun-Drive
+git clone https://github.com/ChimgoHyperion/Gundrive-Hedera.git
+cd Gundrive-Hedera
 ```
 
 2. Server Setup:

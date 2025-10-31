@@ -3,7 +3,7 @@
 ## Project Track
 Gaming & NFTs Track
 
-## 🏅 Certification
+## Certification
 
 - **[Chimgozirim Amadi (Hyperion)]-(https://drive.google.com/file/d/178dk7c36EbWRUgWVBbSAL04zjBKAu8ki/view?usp=drive_link)**  
 - **[Joy Chukwuma]-(https://drive.google.com/file/d/1vRPyJuJvQqTo2hLr8hOgNFErv6Qa20FZ/view?usp=drive_link)**
@@ -15,26 +15,26 @@ Gaming & NFTs Track
 Gundrive is an action-packed multiplayer game built on Unity that integrates Hedera's blockchain technology for in-game asset management and tokenomics. Players can earn GUND tokens through gameplay and collect unique NFT weapons represented as smart contracts on the Hedera network. For more details about the game mechanics and features, see the [Game Documentation](https://github.com/ChimgoHyperion/Gundrive-Hedera/blob/main/Game/README.md)
 
 
-# 🏆 **Why Gundrive Wins the Gaming and NFTs Track for the Hedera for Africa Hackathon**
+# **Why Gundrive Wins the Gaming and NFTs Track for the Hedera for Africa Hackathon**
 
 Gundrive is a prototype for **play-to-earn gaming** on **Hedera** and **EVM chains**, recognized for its innovative approach to decentralized asset ownership and lightning-fast in-app purchasing capabilities.  
 This project showcases **cutting-edge blockchain solutions** and has been validated through **competitive evaluation processes**.
 
 ---
 
-### 🎮 Key Highlights
+### Key Highlights
 
-- 🥇 **Award-Winning Gameplay Design:**  
+- **Award-Winning Gameplay Design:**  
   A casual multiplayer shooter with seamless integration of NFT minting.  
 
-- 💠 **Smart Contract Integration:**  
+- **Smart Contract Integration:**  
   Industry-leading in-game transaction system built using **Hedera Smart Contract service**.  
   *(See [ChimgoHyperion/Gundrive-Hedera/smart-contract](./smart_contract))*  
   
-- 🤖 **Sophisticated Enemy AI (Droid_bot):**  
+- **Sophisticated Enemy AI (Droid_bot):**  
   Provides challenging and dynamic interactions to keep players engaged for long play sessions.  
 
-- 🧭 **Cutting-Edge UI Design:**  
+- **Cutting-Edge UI Design:**  
   Features an intuitive, user-friendly interface designed for casual gamers and NFT holders alike.  
 
 

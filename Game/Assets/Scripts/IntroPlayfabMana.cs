@@ -144,50 +144,9 @@ public class IntroPlayfabMana : MonoBehaviour
         PlayFabClientAPI.LoginWithCustomID(request, OnSuccess, OnError);
     }
 
-    string GetOrCreateCustomId()
-    {
-        string customId = SystemInfo.deviceUniqueIdentifier;
+  
 
-        // Check if deviceUniqueIdentifier is null, empty, or the default WebGL value
-        if (string.IsNullOrEmpty(customId) || customId == "n/a" || customId == SystemInfo.unsupportedIdentifier)
-        {
-            // Try to get stored custom ID from PlayerPrefs
-            customId = PlayerPrefs.GetString("CustomPlayFabID", "");
-
-            // If no stored ID exists, generate a new one
-            if (string.IsNullOrEmpty(customId))
-            {
-                customId = GenerateCustomId();
-                PlayerPrefs.SetString("CustomPlayFabID", customId);
-                PlayerPrefs.Save(); // Ensure it's saved immediately
-            }
-        }
-        //IDGotten = true;
-        return customId;
-       
-    }
-
-    string GenerateCustomId()
-    {
-        // Generate a unique ID using timestamp and random values
-        string timestamp = System.DateTime.Now.Ticks.ToString();
-        string randomPart = UnityEngine.Random.Range(1000, 9999).ToString();
-
-        // Create a more unique identifier by combining multiple sources
-        string combinedId = $"WebGL_{timestamp}_{randomPart}_{UnityEngine.Random.Range(100000, 999999)}";
-
-        // Optional: Add some system info if available
-        string platform = Application.platform.ToString();
-        combinedId += $"_{platform}";
-
-        // Ensure the ID isn't too long (PlayFab has limits)
-        if (combinedId.Length > 100)
-        {
-            combinedId = combinedId.Substring(0, 100);
-        }
-
-        return combinedId;
-    }
+   
     void OnSuccess(LoginResult result)
     {
         LoggedInManager.Instance.isLoggedIn = true;
@@ -199,14 +158,19 @@ public class IntroPlayfabMana : MonoBehaviour
 
         Debug.Log("Successful login/account created!");
         string name = null;
+
         if (result.InfoResultPayload.PlayerProfile != null)
             name = result.InfoResultPayload.PlayerProfile.DisplayName;
+
         PlayerPrefs.SetString("PlayerNickname", name);
+
         currentNameText.text = name;
+
         if (name == null)
             nameWindow.SetActive(true);
         else
             nameWindow.SetActive(false);
+
         GetLeaderboardOnStart(); // called On first login
         CoinBalanceHolder.Instance.GetInventoryCoinBalance();// called on first login
     }
@@ -217,7 +181,7 @@ public class IntroPlayfabMana : MonoBehaviour
             PlayerPrefs.SetString("PlayerNickname", nameInput.text);
             var request = new UpdateUserTitleDisplayNameRequest
             {
-                DisplayName = PlayerPrefs.GetString("PlayerNickname"),
+                DisplayName = nameInput.text,// PlayerPrefs.GetString("PlayerNickname"),
 
             };
 
@@ -227,14 +191,11 @@ public class IntroPlayfabMana : MonoBehaviour
 
 
     }
-    public void DeleteAccount()
-    {
-
-    }
+    
     void OnDisplayNameUpdate(UpdateUserTitleDisplayNameResult result)
     {
         Debug.Log("Updated display name!");
-        //  leaderboardWindow.SetActive(true);
+       
     }
     void OnError(PlayFabError error)
     {
